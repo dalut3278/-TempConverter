@@ -1,9 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+* David Lutelmowski
+* 3/01/19
+* TempConverter
+*/
 package tempconverter;
 import java.util.Scanner;
  /**
@@ -16,16 +15,13 @@ import java.util.Scanner;
                cTemp = (double)5/(double)9*(temp - 32); 
                return cTemp;
                }
-               
-              
-
+             
                public static double celsiusToFahrenheit(double temp) {
                double fTemp;
                fTemp = (double)9/(double)5*temp + 32;
                return fTemp;
-                }
-
-
+               }
+               
                public static void main(String[] args) {
                int choice;
                double temp;
@@ -43,7 +39,7 @@ import java.util.Scanner;
                } else if (choice == 2) {
                     System.out.println("The temperature is "+ celsiusToFahrenheit(temp) + " Degrees Fahrenheit");
                }
-               input.close();1
+               input.close();           
             }
         }
  
